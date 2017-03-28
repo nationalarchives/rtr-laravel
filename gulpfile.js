@@ -1,3 +1,6 @@
+/*
+* This is an example of the gulp file being used in dig, which can be modified.
+*/
 const elixir = require('laravel-elixir');
 
 require('laravel-elixir-vue-2');
