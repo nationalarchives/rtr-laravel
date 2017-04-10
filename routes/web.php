@@ -13,3 +13,6 @@
 
 Route::get('/', 'HomeController@index')->name('home.index');
 
+Route::get('/departments', 'DepartmentsController@index')->name('departments.index');
+
+Route::get('/departments/{department}', 'DepartmentsController@show')->name('departments.show');
