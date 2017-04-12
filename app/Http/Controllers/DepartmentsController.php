@@ -15,6 +15,6 @@ class DepartmentsController extends Controller
 
     public function show(Department $department)
     {
-        return view('departments.show', compact('department'));
+        return $department;
     }
 }

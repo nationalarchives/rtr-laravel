@@ -28,3 +28,10 @@ $factory->define(App\Department::class, function() {
 
     ];
 });
+
+
+$factory->define(App\Transfer::class, function() {
+    return [
+
+    ];
+});
