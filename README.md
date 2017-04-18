@@ -38,3 +38,15 @@ sites:
     - map: rtr.app
       to: /home/vagrant/Code/rtr-laravel/public
 ```
+## Configure application
+
+Run the following commands **from your project root**
+
+* Rename `.env.example` to `.env`
+* Run the following commands
+  * `composer install`
+  * `php artisan key:generate`
+  * `php artisan migrate`
+  * `php artisan db:seed`
+
+At this point you should be able to visit `http://rtr.app:8000`
