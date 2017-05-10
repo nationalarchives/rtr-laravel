@@ -10,4 +10,5 @@ class Department extends Model
     {
         return $this->hasMany(Transfer::class);
     }
+
 }

@@ -8,10 +8,18 @@
                 <h1><span><span>{{ trans('editorial.home.title') }}</span></span></h1>
             </div>
             <div class="breather">
-                <p>{{ trans('editorial.home.first_paragraph') }}</p>
-                <h2>{{ trans('editorial.home.sub_title') }}</h2>
-                <p>{{ trans('editorial.home.sub_title_paragraph') }}</p>
-                <p><a href="{{ route('departments.index') }}">{{ trans('editorial.home.link_text') }}</a></p>
+                <p>Government departments that transfer records to The National Archives provide data on the volume and
+                    transfer status of the records they hold. This data has been collected in Spring and Autumn each
+                    year, beginning in Autumn 2012. From 2017, departments will provide data once a year (starting from
+                    February 2017). The National Archives will use data collected from previous surveys to monitor
+                    compliance and assist departments in managing the transfer process and identifying need for
+                    additional resources.</p>
+                <h2>Access the record transfer report</h2>
+                <p>The file shows the data provided by Government departments that transfer records to The National
+                    Archives. The 21 departments that transfer 90% of the records sent to The National Archives each
+                    year are listed in A-Z order, with the data from the remaining departments included in the report
+                    then also listed alphabetically.</p>
+                <p><a href="http://rtr.app:8000/departments/1">Visual display</a></p>
             </div>
         </div>
     </div>
