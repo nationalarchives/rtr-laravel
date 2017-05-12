@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class DepartmentsController extends Controller
 {
+    public function index()
+    {
+        $department = Department::first();
+        return view('departments.show', compact('department'));
+    }
+
     public function show(Department $department)
     {
         $department->load('transfers');
