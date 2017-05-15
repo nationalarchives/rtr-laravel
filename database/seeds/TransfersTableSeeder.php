@@ -30,6 +30,8 @@ class TransfersTableSeeder extends Seeder
                     'awaiting_disposal_as_percentage_of_total' => percent_of_total($value['awaiting_disposal'], $value['total_records_held']),
                     'awaiting_disposal_under_lci' => $value['awaiting_disposal_under_lci'],
                     'awaiting_disposal_under_lci_as_percentage_of_total' => percent_of_total($value['awaiting_disposal_under_lci'], $value['total_records_held']),
+                    'total_under_lci' => $value['records_selected_for_transfer_under_lci'] + $value['records_still_to_be_reviewed_under_lci'] + $value['awaiting_disposal_under_lci'],
+                    'total_not_under_lci' => $value['records_selected_for_transfer'] + $value['records_still_to_be_reviewed'] + $value['awaiting_disposal'],
                     'comments' => $value['comments']
                 ]);
             }

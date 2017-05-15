@@ -28,6 +28,8 @@ class CreateTransfersTable extends Migration
             $table->float('awaiting_disposal_as_percentage_of_total');
             $table->integer('awaiting_disposal_under_lci');
             $table->float('awaiting_disposal_under_lci_as_percentage_of_total');
+            $table->integer('total_under_lci');
+            $table->integer('total_not_under_lci');
             $table->mediumText('comments');
         });
     }

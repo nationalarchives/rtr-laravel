@@ -42,11 +42,11 @@
                 </li>
             </ul>
             <ul class="graph-key clr">
-                <li class="key-item-one"><span class="indicator"></span><span></span> total
+                <li class="key-item-one"><span class="indicator"></span><span>{{ number_format($transfer->total_under_lci) }}</span> total
                     records
                     subject to a RI
                 </li>
-                <li class="key-item-two"><span class="indicator"></span><span></span> total
+                <li class="key-item-two"><span class="indicator"></span><span>{{ number_format($transfer->total_not_under_lci) }}</span> total
                     records
                     not subject to a RI
                 </li>
