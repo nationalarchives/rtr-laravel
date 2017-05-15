@@ -19,7 +19,7 @@
                     Archives. The 21 departments that transfer 90% of the records sent to The National Archives each
                     year are listed in A-Z order, with the data from the remaining departments included in the report
                     then also listed alphabetically.</p>
-                <p><a href="http://rtr.app:8000/departments/1">Visual display</a></p>
+                <p><a href="{{ route('departments.index') }}">Visual display</a></p>
             </div>
         </div>
     </div>

@@ -56,7 +56,7 @@
             <div class="pad-medium clr">
                 <div class="float-left graph-foot-container">
                     <p class="margin-none pad-top-small pad-bottom-small standfirst float-left">Total
-                        planned for transfer <b></b> &nbsp;out of <b></b></p>
+                        planned for transfer <b>{{ number_format($transfer->planned_total_for_year_end_transfer) }}</b> &nbsp;out of <b>{{ number_format($transfer->total_records_held) }}</b></p>
                 </div>
                 <div class="float-right graph-foot-container">
                     <p class="margin-none pad-top-small pad-bottom-small text-left-to-right standfirst">
