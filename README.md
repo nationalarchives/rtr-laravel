@@ -50,3 +50,9 @@ Run the following commands **from your project root**
   * `php artisan db:seed`
 
 At this point you should be able to visit `http://rtr.app:8000`
+
+## Running tests
+
+### Browser tests
+
+To run application tests in the browser `cd` into the project root and run the `php artisan dusk` command. This uses [Laravel Dusk](https://laravel.com/docs/5.4/dusk) to perform the tests using ChromeDriver.
