@@ -7,7 +7,7 @@ function display_filters($current_department_id, $all_departments)
     $option_template = '<option value="%s"%s>%s</option>';
 
     foreach ($all_departments as $dept) {
-        $is_current_department = ($current_department_id === $dept->id) ? 'selected="selected"' : '';
+        $is_current_department = ($current_department_id === $dept->id) ? ' selected="selected"' : '';
         $options .= sprintf($option_template, $dept->id, $is_current_department, $dept->name);
     }
 
