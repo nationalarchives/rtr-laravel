@@ -1,18 +1,47 @@
 <?php
 
+// Some variants of using Route
+
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+ * Simple routes
 */
 
-Route::get('/', 'HomeController@index')->name('home.index');
+Route::get('/', function () {
+    return 'Hello, World!';
+});
 
-Route::get('/departments/{department}', 'DepartmentsController@show')->name('departments.show');
+// Returning a view directly (without using a controller or passing in any data)
+Route::get('/simple-view', function () {
+    return view('simple');
+});
 
-Route::post('/departments/select', 'DepartmentsController@select_department')->name('departments.select');
+/*
+ * Responding based on HTTP verbs
+*/
+
+Route::post('/', function () {
+    // Responds to a post request
+});
+
+Route::put('/', function () {
+    // Responds to a put request
+});
+
+Route::delete('/', function () {
+    // Responds to a delete request
+});
+
+Route::any('/takes-anything', function () {
+    // Responds to any request
+});
+
+Route::match(['get', 'post'], '/', function () {
+    // Responds to get and post requests
+});
+
+/*
+ * See also (for interest):
+ *      - Route parameters https://laravel.com/docs/5.4/routing#route-parameters
+ *      - Named routes https://laravel.com/docs/5.4/routing#named-routes
+ *      - Regular expression constraints https://laravel.com/docs/5.4/routing#parameters-regular-expression-constraints
+*/
